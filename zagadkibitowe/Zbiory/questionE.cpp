@@ -1,16 +1,22 @@
 #include <iostream>
 #include <list>
 #include <algorithm>
-#include "checking_thru_list.h"
 using namespace std;
 
-        void checking_thru_list(int n) {
-            list<int> myList = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
-            list<int> listForViewing = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32};
+int main() {
+        int n, m;
+        cout << "podaj liczbe n, a nastepnie podaj liczbe m listy myList: ";
+        cin >> n >> m;
+        list<int> myList;
+            list<int> listForViewing;
             list<int> newList;
             int temp = n;
             int bit = 1;
             int index = 0;
+            for (int o=0; o <= 8; o++) {
+                listForViewing.push_back(o);
+                myList.push_back(o);
+            }
             auto i = listForViewing.begin();
             while (i != listForViewing.end() && temp > 0) {
                     cout << "temp: " << temp << endl; 
@@ -35,5 +41,4 @@ using namespace std;
                     cout << j << endl;
             }
   
-  }
-
+}
