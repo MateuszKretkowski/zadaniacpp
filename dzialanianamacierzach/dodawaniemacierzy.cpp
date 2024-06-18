@@ -31,22 +31,5 @@ int main() {
                 cout << endl;
         }
         
-        int tabw2[n][n];
-
-        for (int o=0; o<n; o++) {
-                for (int p=0; p<n; p++) {
-                        tabw2[o][p] = taba[o][p] * tabb[o][p];
-                }
-        }
-
-        
-        cout << "Wynik mnozenia: " << endl;        
-        for (int k=0; k<n; k++) {
-                for (int l=0; l<n; l++) {
-                        cout << "* " << tabw2[k][l] << " *";
-                }
-                cout << endl;
-        }
-
         return 0;
 }
